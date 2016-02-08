@@ -15,3 +15,26 @@
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: 12px;
 }
+
+/* ** Following styles are all new ** */
+
+.headerBar{
+	height: 50px;
+	background-color: #2d4b65;
+}
+
+.headerBar img{
+	width: 150px;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+
+.tabURL {
+	width: 340px;
+	padding: 5px;
+}
+
+.formContent {
+	padding-left:20px;
+	padding-right: 20px;
+}

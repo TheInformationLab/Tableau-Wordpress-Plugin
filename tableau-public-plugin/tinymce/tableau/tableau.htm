@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Embed Tableau Public View</title>
+    <link rel="stylesheet" type="text/css" href="css/tableau.css" />
+	<script type="text/javascript" src="../../../../../wp-includes/js/tinymce/tiny_mce_popup.js"></script>
+
+</head>
+<body>
+  <div class="headerBar">
+    <img src="img/tabpub.png"/>
+  </div>
+<form border="0" onsubmit="mceInsertTableau(); return false;" action="#submit">
+  <div class="formContent">
+  <br />
+  <p align="left" class="field-helper"><span class="form-heading"><strong>Tableau Public Link URL:</strong></span> (Required)</p>
+  <p><input type="text" id="embed_url" class="tabURL" tabindex="1"/></p>
+  <p><img src="img/helpLink.png"/></p>
+  <br />
+    <fieldset>
+    <p align="left" class="field-helper"><span class="form-heading"><strong>Display Size:</strong></span> (Optional)</p>
+    <table width="163" border="0">
+      <tr>
+        <td width="68" class="field-label">Width</td>
+        <td width="37"><label for="width"></label>
+          <input type="text" class="field-label" id="width" tabindex="4" value="650" size="6" /></td>
+        <td width="58"><label for="w_unit" ></label>
+          <select name="w_units" id="w_unit" tabindex="5">
+            <option value="px" >px</option>
+            <option value="per">%</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td class="field-label">Height</td>
+        <td><label for="height"></label>
+          <input name="height" type="text" class="field-label" id="height" tabindex="6" value="800" size="6"/></td>
+        <td><label for="h_unit"></label>
+          <select name="h_unit" id="h_unit" tabindex="7">
+            <option value="px">px</option>
+            <option value="per">%</option>
+          </select></td>
+      </tr>
+    </table>
+  </fieldset>
+</div>
+<br />
+    <p align="right">
+      <input name="cancel" type="button" id="cancel" tabindex="13" onclick="tinyMCEPopup.close();" value="Cancel" />
+      <input name="Submit" type="submit" tabindex="14" value="OK" />
+    </p>
+
+</form>
+<script type="text/Javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/Javascript" src="js/tableau.js"></script>
+</body>
+</html>

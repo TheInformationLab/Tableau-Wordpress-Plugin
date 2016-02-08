@@ -1,32 +1,26 @@
 Tableau Plugin
 ==============
-*Contributors:* Julie Repass (maid0marion)
+*Contributors:* Julie Repass (maid0marion), Craig Bloodworth (The Information Lab)
 *Tags:* shortcode, embed, tableau
-*Tested versions:* 3.3.1, 3.4.1
-*Tested up to:* 3.4.1
+*Tested versions:* 4.4.2
+*Tested up to:* 4.4.2
 
 Description
 ===========
-Php Shortcode to embed a Tableau Server View in a Wordpress page via an iFrame. Plus a shortcode button added to both the HTML and Visual editor.
+Php Shortcode to embed a Tableau Public Viz in a Wordpress page via an iFrame. Plus a shortcode button added to both the HTML and Visual editor.
 
 Installation
 ============
-1. Upload the 'tableau-plugin' folder to the directory used to store plugins (default is `/wp-content/plugins/`)
+1. Upload the 'tableau-public-plugin' folder to the directory used to store plugins (default is `/wp-content/plugins/`)
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 Uninstallation
 ==============
-1. Remove the 'tableau-plugin' folder from the plugins directory in your Wordpress installation (default is `/wp-content/plugins/`).
+1. Remove the 'tableau-public-plugin' folder from the plugins directory in your Wordpress installation (default is `/wp-content/plugins/`).
 
 Using the Plugin
 ================
-The plugin adds a button to both the Visual and HTML editors to insert short code for embedding an interactive Tableau Server view.  For more information on using the Tableau plugin for Wordpress, please visit the [How to Use the Tableau Wordpress Plugin]( 
-https://github.com/maid0marion/Tableau-Wordpress-Plugin/wiki/How-to-Use-the-Tableau-Wordpress-Plugin) wiki page.
-
-Screenshots
-===========
-1. Screenshot-1.png: tinyMCE pop-up window for Tableau button in Visual editor 
-2. Screenshot-2.png: short code generated from Tableau button in HTML editor
+The plugin adds a button to both the Visual and HTML editors to insert short code for embedding an interactive Tableau Server view.
 
 Frequently Asked Questions
 ==========================
@@ -35,21 +29,3 @@ Frequently Asked Questions
 When trying to embed a Tableau Server view in a Wordpress post, the Javascript embed code would work only
 occasionally.  Using the iFrame option consistently displayed the embedded Tableau Server view when viewing
 the published post in different browsers.
-2. *What about installing this feature via a shared Wordpress Plugin?*
-That is the plan. This is version 1 where I wanted to make the shortcode available now to make it
-easier to embed Tableau Server views using the available parameter options.
-
-Changelog
-=========
-V1.01 - 23.03.2012
-------------------
-* Fixed bug for 'revert' parameter and added support for target URL parameter
-* Tested code in 3.4.1 and fixed issue with closing tag in HTML editor
-
-Upgrade Notice
-==============
-V1.01
------
-Updated parameter options and fixed issue with closing tag in HTML editor.
-
-
